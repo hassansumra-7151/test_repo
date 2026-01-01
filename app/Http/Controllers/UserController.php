@@ -113,4 +113,11 @@ class UserController extends Controller
 }
 
 
+
+    public function getData(){
+        $data = register::all();
+        return view('display',['getData'=>$data]);
+    }
+
+
 }
