@@ -120,4 +120,10 @@ class UserController extends Controller
     }
 
 
+    public function DisplayUser(){
+        $data = register::all();
+        return view('display',['getData'=>$data]);
+    }
+
+
 }
