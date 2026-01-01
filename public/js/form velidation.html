@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi step form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="vlidtion.css">
+     
+     
+</head>
+<body>
+	<form action="#" method="post" autocomplete="off">
+		<h1 align="center">Register</h1>
+		<div align="center">
+			<span class="step" id="step-1">1</span>
+			<span class="step" id="step-2">2</span>
+			<span class="step" id="step-3">3</span>
+			<span class="step" id="step-4">4</span>
+		</div>
+        <div class="tab" id="tab-1">
+			<p>Name:</p>
+			<input type="text" name="first name" placeholder="first name">
+			<input type="text" name="last name" placeholder="last name">
+		<div class="index-btn-wrapper">
+			<div class="index-btn" onclick="run(1, 2)">Next</div>
+		</div>
+		</div>
+		<div class="tab" id="tab-2">
+			<p>Contact Info:</p>
+			<input type="text" name="Email" placeholder="Email">
+			<input type="text" name="Phone" placeholder="Phone">
+		<div class="index-btn-wrapper">
+			<div class="index-btn" onclick="run(2 ,1)">Previous</div>
+			<div class="index-btn" onclick="run(2 ,3)">Next</div>
+		</div>
+		</div>
+		<div class="tab" id="tab-3">
+			<p>Birthday:</p>
+			<input type="text" name="dd" placeholder="dd">
+			<input type="text" name="mm" placeholder="mm">
+			<input type="text" name="yy" placeholder="yy">
+		<div class="index-btn-wrapper">
+			<div class="index-btn" onclick="run(3 ,2)">Previous</div>
+			<div class="index-btn" onclick="run(3 ,4)">Next</div>
+		</div>
+		</div>
+		<div class="tab" id="tab-4">
+			<p>Login Info:</p>
+			<input type="text" name="Username" placeholder="Username">
+			<input type="text" name="Password" placeholder="Password">
+		<div class="index-btn-wrapper">
+			<div class="index-btn" onclick="run(4 ,3)">Previous</div>
+			<div class="index-btn" onclick="run(4 ,5)">Next</div>
+		</div>
+		</div>
+		<div class="tab" id="tab-5">
+			<div class="index-btn-wrapper">
+				<div class="index-btn" onclick="run(5 ,4)">Previous</div>
+				<button class="index-btn" type="submit" style="background: blue;">Submit</button>
+			</div>
+		</div>
+	</form>
+	<script src="../js/jquery.js"></script>
+	<script>
+		//$('.tab').css('display','none');
+		$('#tab-1').css('display','block');
+		function run(hideTab , showTab){
+			if(hideTab < showTab){
+				var currentTab = 0;
+				x = $('#tab-'+hideTab);
+				y = $(x).find('input');
+
+				for(i=0; i< y.length; i++){
+					if(y[i].value ==""){
+						$(y[i]).css('background','#ffdddd');
+						return false;
+					};
+				};
+			};
+			for(i =1; i < showTab; i++){
+				$('#step-' +i).css('opacity','1');
+			};
+		
+			$('#tab-' +hideTab).css('display','none');
+			$('#tab-' +showTab).css('display','block');
+			$('input').css('background','#fff');
+		};
+		
+	</script>
+	
+</body>
+
+</html>

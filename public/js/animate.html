@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>append method</title>
+</head>
+<body>
+	<style>
+		#main{
+			background: lightgreen;
+			width: 150px;
+			
+			border-radius:10px;
+			border: 2px solid black;
+			padding: 10px;
+			margin-bottom: 15px;
+			margin-left: 20px;
+			position:relative;
+		}
+		#list{
+			background: pink;
+			width:200px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+	</style>
+	
+	<div id="main">
+		<h1>Start</h1>
+		<p>this is the first peragraph of my assignment assignmentthis i
+		</p>
+    </div>
+	<button id="animate">animate</button>
+	
+	
+	<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#animate').click(function(){
+					$('#main').animate({left :'350px',fontSize:'20px'},1000,);
+					$('#main').animate({width :'+300px'});
+				    $('#main').animate({fontSize :'30px'});
+					$('#main').animate({borderWidth :'10px'});
+						
+						
+				
+				});
+				
+			});
+		</script>
+
+</body>
+</html>

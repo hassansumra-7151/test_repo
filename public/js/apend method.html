@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>append method</title>
+</head>
+<body>
+	<style>
+		#main{
+			background: lightgreen;
+			width: 400px;
+			border: 2px solid black;
+		}
+		#list{
+			background: pink;
+			width:200px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+	</style>
+	<center>
+	<div id="main">
+		<h2>Start</h2>
+		<p>this is the first peragraph of my assignment</p>
+     </div>
+ 
+	<br>
+	<button id="append">append</button>
+	<button id="prepend">prepend</button>
+	</center>
+	<ol id="list">
+		<li>list 1</li>
+		<li>list 2</li>
+		<li>list 3</li>
+		<li>list 4</li>
+	</ol>
+	<br>
+	<button id="list1">append</button>
+	<button id="list2">prepend</button>
+		<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#append').click(function(){
+					$("#main").append("<h2>Friends<h2>");
+
+				});
+				$('#prepend').click(function(){
+					$("#main").prepend("<h2>Dear<h2>");
+				});
+			//list append and prepend!
+				$("#list1").click(function(){
+					$('#list').append('<li>new list</li>');
+				})
+				$("#list2").click(function(){
+					$('#list').prepend('<li>new list add</li>');
+				})
+				
+
+			});
+		</script>
+
+</body>
+</html>

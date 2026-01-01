@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>velidate form3</title>
+	 <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="vlidtion3.css">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+	<script>
+	    	$(document).ready(function() {
+	    	//$("#basic-form").css('background','pink');
+            $("#basic-form").validate();
+
+            if(("#basic-form").validate()){
+
+              document.write("successfully");
+            }else{
+              document.write("reject");
+            };
+            
+           // $('.submit').submit(function(){
+            //	$('#output').val("hello");
+            });
+	      // $('#submit').click(function(){
+       //      	var name=$('#name').submit();
+       //          document.write(name +'name');
+       //      });
+
+	   
+       
+	</script>
+	<body>
+	<form id="basic-form" action="" method="post">
+	 <div id="output"></div>
+    <p>
+      <label for="name">Name <span>(required, at least 3 characters)</span></label>
+      <input class="name" name="name" minlength="3" type="text" required>
+    </p>
+    <p>
+      <label for="email">E-Mail <span>(required)</span></label>
+      <input id="name" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="text">Password <span>(required)</span></label>
+      <input id="name" type="password" name="password" required>
+    </p>
+    <p>
+      <button type="submit" id="submit">Submit</button>
+    </p>
+</form>
+
+</body>
+</html>

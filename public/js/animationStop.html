@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation stop</title>
+</head>
+<body>
+	<style>
+		#main{
+			background: lightgreen;
+			width: 150px;
+			
+			border-radius:10px;
+			border: 2px solid black;
+			padding: 10px;
+			margin-bottom: 15px;
+			margin-left: 20px;
+			position:relative;
+		}
+		#list{
+			background: pink;
+			width:200px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+		#animate{
+			margin-left: 20px;
+		}
+	</style>
+	
+	<div id="main">
+		<h1>Start</h1>
+		<p>this is the first peragraph of my assignment this!
+		</p>
+    </div>
+	<button id="animate">animate</button>
+	<button id="stop">stop</button>
+	
+	
+	<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#animate').click(function(){
+					$('#main').animate({left :'150px',},3000,);
+					$('#stop').click(function(){
+						$('#main').stop();
+					});
+						
+						
+				
+				});
+				
+			});
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pageXY mthod</title>
+</head>
+<body>
+	<style>
+		#first{
+			background: pink;
+			width:500px;
+			height:300px;
+			border:2px solid black;
+		}
+		#second{
+			width:50px;
+			height:50px;
+			border:2px solid black;
+			background:lightyellow;
+		}
+	</style>
+	<center>
+	<div id="first"></div>
+	<div id="second"></div>
+		
+	
+	</center>
+	
+		<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+			$(document).mousemove(function(event){
+				$('#first').text("X:" +event.pageX +"  Y:" 
+					+ event.pageY)
+				var x= event.pageX
+				var y= event.pageY
+				$('#second').offset({top:y,left:x});
+			});
+				});
+		</script>
+	
+
+</body>
+</html>

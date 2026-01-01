@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>append method</title>
+</head>
+<body>
+	<style>
+		#main{
+			background: lightgreen;
+			width: 400px;
+			
+			border-radius:10px;
+			border: 2px solid black;
+			padding: 40px;
+			margin-bottom: 10px;
+		}
+		#list{
+			background: pink;
+			width:200px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+	</style>
+	<center>
+	<div id="main">
+		<h1>Start</h1>
+		<p>this is the first peragraph of my assignment this is the first peragraph of my assignmentthis is the first peragraph of my assignmentthis is the first peragraph of my assignmentvvvthis is the first peragraph of myt</p>
+    </div>
+	<button id="position">position</button>
+	<button id="offset">affset</button>
+	</center>
+	<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#position').click(function(){
+				console.log($('#main').position());
+
+				});
+				$('#offset').click(function(){
+				console.log($('#main').offset());
+
+				});
+
+
+			});
+		</script>
+
+</body>
+</html>

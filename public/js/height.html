@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>append method</title>
+</head>
+<body>
+	<style>
+		#main{
+			background: lightgreen;
+			width: 400px;
+			border-radius: 10px;
+			border: 15px solid black;
+			padding: 40px;
+
+		}
+		#list{
+			background: pink;
+			width:200px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+	</style>
+	<center>
+	<div id="main">
+		<h2>Start</h2>
+		<p>this is the first peragraph of my assignment this is the first peragraph of my assignmentthis is the first peragraph of my assignmentthis is the first peragraph of my assignmentvvvthis is the first peragraph of my assignment</p>
+    </div>
+ 
+	<br>
+	<button id="width">width</button>
+	<button id="height">height</button>
+	</center>
+	<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#width').click(function(){
+					$('#main').width('200px');
+				console.log('width:' + $('#main').width());
+				console.log('innerwidth:' + $('#main').innerWidth());
+				console.log('outerwidth:' + $('#main').outerWidth());
+					
+				});
+				$('#height').click(function(){
+					$('#main').height('500px');
+				console.log('height:' + $('#main').height());
+				console.log('innerheight:' + $('#main').innerHeight());
+				console.log('outerheight:' + $('#main').outerHeight());
+					
+				});
+				
+
+			});
+		</script>
+
+</body>
+</html>

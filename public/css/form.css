@@ -1,0 +1,23 @@
+#main{
+	background: lightgreen;
+	float: left;
+	width: 650px;
+}
+#bg{
+
+	background: lightgreen;
+	height: 550px;
+	color:#CC33FF;
+	text-underline-position: 2px;
+}
+#first{
+	background: lightgreen;
+	padding-top: 100px;
+	color:#CC33FF;
+
+}
+#head{
+	color:red;
+}
+#heaf{
+	

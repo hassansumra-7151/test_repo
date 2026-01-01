@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sweet alert</title>
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="vlidtion.css">
+</head>
+<body>
+	<style>
+		body{
+			background:	#FFFFCC;
+		}
+		.red{
+			color:red;
+		}
+		.blank{
+			border: 1px solid #e74c3c;
+			box-shadow: 0 0 0 1px #e74c3c;
+
+        }
+        .required{
+        	border: 1px solid lightgreen;
+        	border-radius: 25px;
+        }
+	</style>
+	<div class="container">
+		<div class="md-5">
+		   <div class="form-area">
+		   <form method="">
+		   	<br style="clear:both">
+		   	<h3 style="margin-bottom:15px;text-align: center; color: lightpink;">Validation form</h3>
+		   	<div class="form-group">
+		   		<label>Name</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="name" placeholder="name">
+		   	</div>
+		   		<div class="form-group">
+		   		<label>Email</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="email" placeholder="Email">
+		   	</div>
+		   	<div class="form-group">
+		   		<label>Mobile</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="mobile" placeholder="Mobile number">
+		   	</div>
+		   	
+            <button id="btn" class="btn btn-success" style="; color: white;" >submit</button>
+		   	
+		   </form>
+	</div>
+</div>
+</div>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+	let btn =  document.getElementById('btn');
+	    btn.addEventListener('click' , function(){
+	    	event.preventDefault();
+			var name = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+			var mobile = document.getElementById('mobile').value;
+
+			if(name == ""){
+			  swal ( "Error" ,  "Please Enter your name" ,  "Error" );	
+			
+
+			}elseif(email == ""){
+			  swal ( "Error" ,  "Please Enter your email" ,  "Error" );
+           
+			}elseif(mobile ==""){
+				 swal ( "Error" ,  "Please Enter your phone" ,  "Error" );	
+			}else{
+				swal ( "submit" ,  name ,  "success" );
+				swal ( "submit" ,  email ,  "success" );
+				swal ( "submit" ,  mobile ,  "success" );
+			
+};
+   
+	});
+
+
+  
+
+	//swal ( "success" ,  "Congratulations" ,  "success" );
+
+
+</script>
+</body>
+</html>
+
+
+
+<!-- <script>
+	let btn =  document.getElementById('btn');
+	    btn.addEventListener('click' , function(){
+	    	event.preventDefault();
+			let name = document.getElementById('name').value;
+			if(name == ""){
+			  swal ( "Error" ,  "Please Enter your name" ,  "Error" );	
+			
+			}else{
+				swal ( "submit" ,  name ,  "success" );
+			
+			};
+
+
+	});
+
+  
+
+	//swal ( "success" ,  "Congratulations" ,  "success" );
+
+
+</script> -->

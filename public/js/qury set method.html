@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>set method</title>
+</head>
+<style>
+	#div{
+		background: lightgreen;
+		width: 500px;
+	}
+</style>
+<body>
+	<div id="div">
+		<h2 id="head">Set method</h2>
+		<p id="pera">makilzhnhthita varu puranhtharan thana puram peRa muthu koapa makara vem karum katal otunGkita nhichicharan perum kulam oarunGkiRa vanachan nhinRu
+		</p>
+	</div>
+	<button id="click">set item</button>
+
+
+ <script src="../js/jquery.js"></script>
+ <script>
+ 	$(document).ready(function(){
+ 		$('#click').click(function(){
+ 			$('#div h2').text("Noor Hassan");
+ 			$('#div h2').css("color",'red');
+ 			$('#div h2').html("<center><u>Noor Hassan</u></center>");
+
+ 			$('#div p').text("this is tha peragraph");
+ 			$('#div p').css("background",'lightpink');
+
+ 			$('#div p').html("this is <b>tha</b> peragraph");
+ 		})
+
+ 	})
+ 	
+
+ </script>
+
+</body>
+</html>

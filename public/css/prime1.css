@@ -1,0 +1,23 @@
+.container{
+	border:0px solid black;
+}
+body{
+	padding:0px 20px;
+	background:;
+
+}
+#h1{
+	background: #66CCFF;
+	color: white;
+	padding:15px 0px 15px 10px;
+}
+#select{
+	width: 100%;
+	border:1px solid grey;
+	border-radius: 5px;
+	padding:4px 0px;
+
+}
+#lebel{
+	margin-top: 30px;
+}

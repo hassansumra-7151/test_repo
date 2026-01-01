@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>velidate form</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+          /* $('.form').submit(function(){
+              $(this).find('.required').each(function(){
+                if($(this).val()==""){
+                	//$(this).addClass('blank')
+                	console.log('Hello');
+                };
+              });
+           });*/
+           $('.submit').click(function(){
+           	$('#name').val().innerHTML;
+           //	document.write('form');
+           });
+           });
+	</script>
+</head>
+<body>
+	<style>
+		body{
+			background:	#FFFFCC;
+		}
+		.red{
+			color:red;
+		}
+		.blank{
+			border: 1px solid #e74c3c;
+			box-shadow: 0 0 0 1px #e74c3c;
+		}
+        #submit:hover{
+            opacity:0.8;
+        }
+        .required{
+        	border: 1px solid lightgreen;
+        	border-radius: 25px;
+        }
+	</style>
+	<div class="container">
+		<div class="md-5">
+		   <div class="form-area">
+		   <form class="form" action="#" method="post">
+		   	<br style="clear:both">
+		   	<h3 style="margin-bottom:15px;text-align: center; color: lightpink;">Validation form</h3>
+		   	<div class="form-group">
+		   		<label>Name</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="name" placeholder="name">
+		   	</div>
+		   	<div class="form-group">
+		   		<label>Email</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="email" placeholder="Email">
+		   	</div>
+		   	<div class="form-group">
+		   		<label>Mobile</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="phone" placeholder="Mobile number">
+		   	</div>
+		   	<div class="form-group">
+		   		<label>Subject</label><span class="red">*<small></small></span>
+		   		<input type="text" name="" class="form-control required" id="name" placeholder="subject">
+		   	</div>
+		   	<div class="form-group">
+		   		<label>Message</label><span class="red">*<small></small></span>
+		   	<textarea class="form-control required" name="message" type="textarea"
+		   	id="message" placeholder="message" maxlength="140"></textarea>
+            </div>
+            <button type="submit" id="submit" name="submit" class="btn btn-primery pull-right" style="background: blue; color: white;" >submit form</button>
+		   	
+		   </form>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

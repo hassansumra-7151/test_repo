@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Append Function</title>
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="new1.css">
+</head>
+<body id="lenght">
+
+	<h5 id="head">Add Invoice</h5>
+   <div class="container" id="main">
+	<table border="1" cellspacing="0" id="table">
+	  <tr style="text-align: center;">
+		<th>Sr.No</th>
+		<th>Product</th>
+		<th>Qty</th>
+		<th>Price</th>
+		<th>Total</th>
+		<th>Action</th>
+	</tr>
+	<tr>
+		<td style="text-align: center;">1</td>
+	 <td>
+	<select id="select">
+	    <option>--Select--</option>
+	    <option>Clothes</option>
+	    <option>Shose</option>
+	    <option>Jewellery</option>
+	    <option>Bages</option>
+	</select>
+	</td>
+	   <td>
+		 <input type="text" class="qty" name="Qty" value="" onchange="multiply();">
+	   </td>
+	   <td>
+			<input type="text" class="rate" name="rate" value="" onchange="multiply();">
+	   </td>
+		<td><input type="text"class="total" name="" disabled=""></td>
+	   <td>
+			<button id="btn" class="btn btn-primary">Add</button>
+	   </td>
+    </tr>
+    <tbody >
+    	
+    </tbody>
+</table>
+    <div>
+    	<label style="font-size:15px;">Total</label>
+    	<br>
+    	<input type="text" id="tbody" name="Ftotal" class="Ftotal" disabled="">
+    	<button id="btn2" class="btn btn-primary">Save</button>
+    </div>
+	</div>
+	<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+			$('#btn').click(function(){
+				var length = $('tbody tr').length;
+
+               // alert(leng);
+				$('#table').append('<tr><td style="text-align: center;" id="div">'+length+'</td><td><select id="select"><option>--Select--</option><option>Clothes</option><option>Shose</option><option>Jewellery</option><option>Bages</option></select></td><td><input type="text" class="qty" name="Qty" value="" onchange="multiply();"></td><td><input type="text" class="rate" name="rate" value="" onchange="multiply();"></td><td><input type="text"id="total" class="total" name=""  disabled=""></td><td><center><button id="remove" style="background:red;" class="btn btn-danger">Remove</button></td></tr>');
+				/*$("#table").append('<tr><td style="text-align: center;">2</td><td><select id="select"><option>--Select--</option><option>Clothes</option></select></td><td><input type="text" id="first" name=""></td><td><input type="text" id="second" name=""></td><div id="append"></div><td id="total"></td><td><center><button  style="background:lightgreen; color:white;" class="btn btn-danger" id="remove" margin-left:20px;">x</button></td></tr>');
+				});*/
+				// $('tbody').on("click", '#btn2', function () {
+    		//$(this).closest("tr").remove();
+    		// alert('sadjg');
+		});
+
+				  $('tbody').on("click", '#remove', function () {
+    		$(this).closest("tr").remove();
+	     	});
+			 });
+				  
+	     
+		  /*	function btn(){
+				var n1= parseInt(document.getElementById('first').value);
+		var n2= parseInt(document.getElementById('second').value);
+		var aply=document.getElementById('total').value;
+		//var aply=document.getElementById('operators').value;
+
+		if(aply === '*'){
+			document.getElementById('total').value=first*second;
+		}
+		}*/
+       
+        
+		</script>
+		<script type="text/javascript">
+			 function multiply(element = null){
+			 	if (element == null) {
+			 		return false
+			 	}
+            	var Qty= element.find('.qty').val();
+        	  	var rate = element.find('.rate').val();
+        	  	var total = parseFloat(Qty)*parseFloat(rate);
+        	  	element.find('.total').val(total);
+        	
+
+        	  	
+
+            };
+
+           
+
+
+                $('body').on('keyup','.qty',function(){
+            	var parent = $(this).closest('tr');
+            	multiply(parent);
+            });
+                $('body').on('keyup','.rate',function(){
+             	var parent = $(this).closest('tr');
+            	multiply(parent);
+            })
+           
+             //     $('body').on('keyup','.Ftotal',function(){
+             //    $(this).closest('tr');
+             // 	multiply();
+             // })
+
+
+		</script>
+		
+        <script>
+            $('.qty, .rate').keyup(function(){
+            var rate = parseFloat($('.qty').val()) || 0;
+            var box = parseFloat($('.rate').val()) || 0;
+         
+
+            $('.Ftotal').val(rate * box);    
+        });
+
+
+
+        </script>
+        
+	       
+        
+</body>
+</html>

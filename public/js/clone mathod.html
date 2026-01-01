@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>append method</title>
+</head>
+<body>
+	<style>
+		#main{
+			background: lightgreen;
+			width: 400px;
+			border: 2px solid black;
+		}
+		#list{
+			background: pink;
+			width:200px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+		#next{
+			background: pink;
+			width:400px;
+			border:2px solid black;
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+		}
+	</style>
+	<center>
+	<div id="main">
+		<h2>Start</h2>
+		<p>this is the first peragraph of my assignment</p>
+     </div><br><br>
+     <div id="next">
+		<p>this is another DIV</p>
+     </div>
+     <br><br>
+     <button id="clone">clone</button>
+     <script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#clone').click(function(){
+					$('#main h2').clone().prependTo('#next');
+
+				});
+				$('#clone').click(function(){
+					$('#main p').clone().appendTo('#next');
+
+				});
+			});
+			
+		</script>
+
+</body>
+</html>

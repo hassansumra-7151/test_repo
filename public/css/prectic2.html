@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prectic 2 on append function</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="prec2.css">
+</head>
+<body>
+	<div class="container">
+		<center>
+		<div>
+			<h2>Govt. Graduate Collage Layyah</h2>
+			<h6><u>Events/Matches Scehdule Annual Spors 2023</u></h6>
+			<br>
+			<h6><u>Date (06-02-2023)</u></h6>
+		</div>
+		<table border="1px" cellspacing="0" style="text-align: center;" id="table1" >
+			
+			<tr>
+				<th>Matches</th>
+				<th>Cricket(Boys)</th>
+				<th>Volley Ball</th>
+				<th>Football</th>
+				<th>Badminton(Girls)<br>Single/Double</th>
+				<th>Click</th>
+			</tr>
+			<tr>
+				<td>Match-1</td>
+				<td>BS-Physics<br>VS<br>BS-IT</td>
+				<td>FA<br>VS<br>ADP</td>
+				<td>BS-Botany<br>VS<br>BS-Physics</td>
+				<td>BS-Chemistry<br>VS<br>BS-Islamiat</td>
+			</tr>
+			<tr>
+				<td>Match-2</td>
+				<td>FA<br>VS<br>ADP</td>
+				<td>BS-English<br>VS<br>BS-Botany</td>
+				<td>FA<br>VS<br>BS-English</td>
+				<td>BS-IT<br>VS<br>BS-Math</td>
+			</tr>
+			<tr>
+				<td>Match-3</td>
+				<td>BS-Math<br>VS<br>BS-Urdu</td>
+				<td>BS-Math<br>VS<br>ICS</td>
+				<td>BS-English<br>VS<br>Winner Of Match-1</td>
+				<td>BS-Physics<br>VS<br>Winner Of Match-2</td>
+			</tr>
+			<tr>
+				<td>Match-4</td>
+				<td>BS-Chemistry<br>VS<br>F.SC</td>
+				<td>ICS<br>VS<br>BS-Chemistry</td>
+				<td>Winner Of Match-1<br>VS<br>BS-IT</td>
+				<td>BS-IT<br>VS<br>BS-Math</td>
+			</tr>
+			<tr id="">
+				<td>1</td>
+				<td>Nill</td>
+				<td>Nill</td>
+				<td>Nill</td>
+				<td>Final Match<br>Winner Of Match-4<br>VS<br>Winner Of Match-4</td>
+				<td><button class="btn btn-success" id="khan">KHAN G</button></td>
+			</tr>
+		</table>
+		<br>
+		<button class="btn btn-primary" id="btn" >Add</button>
+		<br>
+		<table border="1px" cellspacing="0" style="text-align: center;" id="table2">
+
+		<h6><u>Duties Of Staff</u></h6>
+		<br>
+		<tr>
+			<th>Staff</th>
+			<th>Cricket(Boys)</th>
+			<th>Volley Ball</th>
+			<th>Football</th>
+			<th>Badminton(Girls)<br>Single/Double</th>
+			<th>Click</th>
+		</tr>
+		<tr>
+			<td rowspan="6"><b>Match<br>Conducting<br>Officials</b></td>
+			<td>Prof.Shahzad<br> Khan</td>
+			<td>Prof.M.Ajmal</td>
+			<td>Prof.Farrukh <br>Shahzad</td>
+			<td>Prof.Dr.Bilal<br> Wander</td>
+		</tr>
+		<tr>
+			<td>Prof.Faqeer<br> Hussain</td>
+			<td>Prof.Sami Ullah<br>(Chem)</td>
+			<td>Prof.Sibte Hussain</td>
+			<td>Prof.Tahir Masood</td>
+		</tr>
+		<tr>
+			<td>Prof.<br>Muhammad <br>Rizwan</td>
+			<td>Prof.M.Saleem<br>(English)</td>
+			<td>Prof.Shahkar<br>Mehdi</td>
+			<td>Prof.Aqsa Rubab</td>
+		</tr>
+		<tr>
+			<td>Rana Yousaf</td>
+			<td>Shahid Qamar</td>
+			<td>M. Bilal(AD)</td>
+			<td>Nasir Baloch</td>
+		</tr>
+		<tr>
+			<td>M. Sarwar</td>
+			<td>M. Hasnain</td>
+			<td>M. Sarwar</td>
+			<td>M. Jamshed</td>
+		</tr>
+		<tr>
+			<td>Shakir Hussain</td>
+			<td>Saif Ullah</td>
+			<td>M. Rauf</td>
+			<td>Mureed Hussain</td>
+			<td><button class="btn btn-primary" id="shan">SHAN G</button></td>
+		</tr>
+		<br>
+
+		</table>
+		<br>
+				
+	</center>
+
+	</div>
+
+	<br><br><br>
+	<center>
+<div id="div">
+	
+</div>
+</center>
+	<script src="../js/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+          $('#khan').click(function(){
+          	var length= $('tbody tr').length;
+           $('#table1').append('<tr id="shan"><td>'+length+'</td><td>Nill</td><td>Nill</td><td>I LOVE YOU</td><td>Final Match<br>Winner Of Match-4<br>VS<br>Winner Of Match-4</td><td><button class="btn btn-danger" id="remove">Remove</button></td></tr>')
+          });
+          $('tbody').on('click' , '#remove' , function(){
+           $(this).closest('tr').remove();
+          });
+		});
+		
+		
+	</script>
+	<script>
+		   $(document).ready(function(){
+           $('#shan').click(function(){
+           $('#table2').append('<tr><td>Shakir Hussain</td><td>Saif Ullah</td><td>M. Rauf</td><td>Mureed Hussain</td><td><button class="btn btn-danger" id="remove">Remove</button></td></tr>')
+           });
+           $('tbody').on('click' , '#remove', function(){
+           	$(this).closest('tr').remove();
+           });
+           });
+	</script>
+
+</body>
+</html>;

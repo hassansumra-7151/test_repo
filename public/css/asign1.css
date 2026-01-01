@@ -1,0 +1,148 @@
+.container{
+	border: 0px solid black;
+}
+#back{
+	background: #33784f;
+	color:white;
+	height:42px;
+	padding-top: 8px;
+	padding-right: 40px;
+}
+#zon{
+	background-color: white;
+	color:#33784f;
+	margin-left: 15px;
+}
+#set{
+	margin-bottom:20px;
+	margin-left: 10px;
+}
+#wite{
+	color:black;
+	background-color: white;
+}
+#img{
+	background-image:url(image/opp-banner.jpg);
+	color:white;
+	padding: 20px 0px 80px 0px;
+    background-color: rgba(0,0,0,0.10);
+}
+#seen{
+	color:white;
+	background:#343a40;
+}
+#sir{
+	background: #33784f;
+	color:white;
+}
+#yes{
+  
+    color:#343a40!important;
+     display: inline-block;
+}
+#green-btn{
+    background: #343a40;
+    color: #fff !important;
+    border-radius: 35px;
+    padding: 0px 20px !important;
+    display: inline-block;
+    text-align: center;
+}
+#save{
+    padding: 10px 20px !important;
+    width: 230px !important;
+    }
+  #dear{
+    border-radius: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 0 0 7px 0 #ccccccd1;
+    height: 160px;
+    position: relative;
+    width: 5px;
+    min-height: 1px;
+    padding-right: 15px;
+}
+
+#bg{
+	background: #f5f8fb;
+
+}
+#clr:hover{
+       
+      opacity: 0.8;
+
+}
+#clr{
+	color:#33784f;;
+	background-color:white;
+
+
+}
+#dark{
+	color:#9a9a9a;
+	background:white;
+
+}
+#black{
+	color:black;
+}
+.green{
+
+    background: #33784f;
+    color: #fff !important;
+    border-radius: 35px;
+    padding: 4px 20px 10px !important;
+    display: inline-block;
+    text-align: center;
+}
+#mg{
+	background-image:url(image/full-bg-img.jpg);
+	color:white;
+	padding: 150px 0px 150px 0px;
+
+
+}
+#span{
+	border:1px dotted white;
+	padding:0px 10px ;
+}
+#pad{
+	margin-right: 3px;
+}
+.white-btn {
+    background: #fff;
+    padding: 9px 15px;
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: 600;
+    border-radius: 35px;
+    width: 160px;
+    text-align: center;
+    border: 2px solid #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    line-height: 1.4;
+}
+#mar{
+	margin-top: 80px;
+}
+#gel{
+	color:black;
+    background: #fff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 5px;
+    border: 2px solid #33784f;
+    box-shadow: 0 0 7px 0 #ccccccd1;
+   margin-left: 8px;
+}
+#blue{
+	background:#f5f8fb;
+	
+}
+#black{
+	color:black;
+}

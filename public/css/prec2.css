@@ -1,0 +1,19 @@
+body{
+	background: #eaaea;
+}
+table{
+	background:;
+}
+#table1{
+	width: 60%;
+}
+#table2{
+	width: 60%;
+}
+#btn{
+	width: 20%;
+}
+#btn:hover{
+	opacity:0.8;
+
+}

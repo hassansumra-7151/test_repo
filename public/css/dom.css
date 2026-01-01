@@ -1,0 +1,30 @@
+.container{
+	border: 0px solid black;
+}
+.row{
+	border:0px solid blue;
+}
+#ran{
+	background:pink;
+}
+#tell{
+     background:#99FFFF;
+}
+#well{
+	background:#99CCFF;
+}
+#reed{
+background:	#FF99CC;
+}
+#need{
+     background:#CC66FF;
+}
+#done{
+	background:	#FF9933	;
+}
+#sar{
+  color:red;
+  text-shadow:2px 2px 1px blue;
+		font-size:50px;
+		text-decoration:underline 3px wavy #FF3399;
+}

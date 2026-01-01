@@ -1,0 +1,18 @@
+.container{
+	border: 2px solid black;
+}
+#head{
+	background:#66FFCC;
+}
+#menu{
+	background:#FF66FF;
+}
+#side{
+	background:	#99FFFF;
+}
+#son{
+	background:#CC66FF;
+}
+#link{
+	background:#CCCC99;
+}

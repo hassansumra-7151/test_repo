@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery</title>
+</head>
+<body>
+	<style>
+	#test1{
+
+	background: lightgreen;
+	float:right;
+	width: 500px;
+	margin-right: 100px
+}
+#test2{
+
+	background: pink;
+	width: 500px;
+	margin-left:100px; 
+}
+</style>
+	<div id="test1">
+	<h1>test 2</h1>
+		<p> The Lorem Ipsum for photos. · Easy to use, stylish placeholders · Specific Image ·      Static Random Image · Grayscale · Blur · Advanced Usage · List Images.
+                Here
+             Here you can view all the images Lorem Picsum provides. Get a ...
+      </p>
+  </div>
+  <div id="test2">
+  	  <h1>test 1</h1>
+		<p> The Lorem Ipsum for photos. · Easy to use, stylish placeholders · Specific  Static Random Image · Grayscale · Blur · Advanced Usage · List Images.
+              Here
+           Here you can view all the images Lorem Picsum provides. Get a ...
+           More results from picsum.photos »
+       </p>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script>
+        
+         $(document).ready(function(){
+
+          $("#test1").click(function(){
+
+         $("#test1").css("background","red")
+          });
+
+
+          $("#test1").dblclick(function(){
+
+         $("#test1").css("background","yellow")
+          });
+
+
+           $("#test1").contextmenu(function(){
+
+         $("#test1").css("background","blue")
+          });
+
+
+            $("#test1").mouseenter(function(){
+
+         $("#test1").css("background","#C0C0C0")
+          });
+
+
+            $("#test1").mouseleave(function(){
+
+         $("#test1").css("background","lightgreen")
+          });
+               
+         
+
+
+
+
+         $("#test2").click(function(){
+
+         $("#test2").css("background","red")
+          });
+
+
+          $("#test2").dblclick(function(){
+
+         $("#test2").css("background","yellow")
+          });
+
+
+           $("#test2").contextmenu(function(){
+
+         $("#test2").css("background","blue")
+          });
+
+
+            $("#test2").mouseenter(function(){
+
+         $("#test2").css("background","	#CC9999	")
+          });
+
+
+            $("#test2").mouseleave(function(){
+
+         $("#test2").css("background","lightpink")
+          });
+               
+          });
+         $("body").keydown(function(){
+         	$(this).css('background','#99CCFF')
+         });
+
+          $("body").keyup(function(){
+         	$(this).css('background','	#CC99FF')
+         });
+
+
+         
+
+
+
+  </script>
+
+</body>
+</html>

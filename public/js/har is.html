@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>has is mathed</title>
+</head>
+<body>
+	<style>
+		#first{
+			border:1px solid black;
+			background: lightpink;
+			margin-left: 15px;
+			padding: 5px;
+			width:50%;
+		}
+		#second{
+			border:1px solid black;
+			background: lightgreen;
+			margin-left: 15px;
+			padding: 5px;
+			width:50%;
+		}
+	</style>
+	<div id="first">
+		<p>this is a normal <b>condition for new case</b> this is a normal condition for new casethis is a normal condition for new case this is a normal condition for new casethis is a normal condition for new case</p>
+		<p>this is a normal condition for new case this is a normal condition for new casethis is a normal condition for new case</p>
+	</div>
+	<div>
+		<ul>
+			<li>Orange</li>
+			<li>Apple</li>
+			<li>Banana</li>
+			<li>Graphs</li>
+		</ul>
+	</div>
+	
+		<p>this is a normal condition for new case this is a normal condition for new casethis is a normal condition for new case this is a normal condition for new casethis is a normal condition for new case
+		<span>this is a normal</span> condition for new case this is a normal condition for new casethis is a normal condition for new case</p>
+
+		<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('p').has('b,span').css('background','gold');
+			});
+		</script>
+	
+
+</body>
+</html>

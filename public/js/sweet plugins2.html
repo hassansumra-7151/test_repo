@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sweet alert2</title>
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href=".css">
+</head>
+<body>
+	<style>
+		body{
+			background:	#FFFFCC;
+		}
+		.red{
+			color:red;
+		}
+		.blank{
+			border: 1px solid #e74c3c;
+			box-shadow: 0 0 0 1px #e74c3c;
+		}
+        #submit:hover{
+            opacity:0.8;
+        }
+        #name{
+        	border: 1px solid lightgreen;
+        	border-radius: 25px;
+        	border: 1px solid #e74c3c;
+			box-shadow: 0 0 0 1px #e74c3c;
+			margin-top: 70px;
+			padding-right: 80px;
+			padding-left: 10px;
+			align-items: center;
+			margin-left: 15px;
+        }
+        #btn:hover{
+        	opacity: 0.8;
+        }
+        #btn{
+        	margin-left: 15px;
+        	border: 1px solid lightgreen;
+        }
+	</style>
+	<form>
+	<input type="text" name="" id="name" placeholder="name">
+	<br><br>
+	<button class="btn btn-success" id="btn">click me</button>
+</form>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+    	let btn =  document.getElementById('btn');
+	    btn.addEventListener('click' , function(){
+	    	event.preventDefault();
+			let name = document.getElementById('name').value;
+			if(name == ""){
+			  swal ( "Error" ,  "Please inter your name" ,  "Error" );	
+			}else{
+				swal ( "success" ,  name ,  "success" );
+			};
+
+	});
+    	//swal ( "success" ,  "Congratulations" ,  "success" );
+    </script>
+</body>
+</html>
+
+
+
+$("#append").append('<table border="1" cellspacing="0"><tr><th>Sr.No</th><th>Product</th><th>Qty</th><th>Price</th><th>Total</th><th>Action</th></tr><tr><td>1</td><td><select style="width:200px; margin-left:40px;"><option>--select--</option><option>Clothes</option><option>Shose</option><option>Jewellery</option><option>Bages</option></select></td><td><input type="taxt"</td><td><input type="text"</td><td></td><td><button style="background:red; color:white; margin-left:20px; margin-top: 8px; margin-bottom: 8px;">+</button></td></tr></table>');https://stackexchange.com/https://stackoverflow.co/https://stackexchange.com/
+STACK OVERFLOW
+Questions
+Help
+PRODUCTS
+Teams
+Advertising
+Collectives
+Talent
+COMPANY
+About
+Press
+Work Here
+Legal
+Privacy Policy
+Terms of Service
+Contact Us
+Cookie Settings
+Cookie Policy
+STACK EXCHANGE NETWORK
+Technology
+Culture & recreation
+Life & arts
+Science
+Professional
+Business
+API
+Data
+Blog
+Facebook
+Twitter
+LinkedIn
+Instagram
+Site design / logo © 2023 Stack Exchange Inc; user 

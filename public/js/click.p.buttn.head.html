@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click event</title>
+</head>
+<body>
+	<style>
+		#first{
+			background: pink;
+			padding: 50px;
+			border:2px solid black;
+		}
+	</style>
+	<div id="first">
+		<h2>Heading</h2>
+		<p>this is a peragraph on it function thesit normal condition this is a peragraph on it function thesit normal conditionthis is a peragraph on it function thesit normal condition</p>
+		<button>button</button>
+		<div id="name"></div>
+		
+	</div>
+	
+		<script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+			   $('#first').click(function(){
+			   	alert('target div function');
+			   	});
+
+			   	$('h2').click(function(){
+			   	alert('target h2 function');
+			   	});
+
+			   	$('p').click(function(event){
+			   		event.stopPropagation();
+                 alert('target p function');
+			   	});
+
+			   	$('button').click(function(event){
+			   		event.stopPropagation();
+			   	alert('target button function');
+
+			   });
+				});
+		</script>
+	
+
+</body>
+</html>

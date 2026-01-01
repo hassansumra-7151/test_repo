@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration form</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+     <link rel="stylesheet" href="../css/bootstrap.css">
+     <link rel="stylesheet" href="form.css">
+     
+     
+</head>
+<body>
+	<style>
+		
+		#main{
+	background:#FFFFCC;
+	padding-left:50px;
+	width: 1340px;
+	text-shadow: 1px 1px 2px red;
+	border:1px solid black;
+	margin-left: 5px;
+   }
+	#bg{
+
+	background:;
+	height: 550px;
+	color:#CC33FF;
+	text-underline-position: 2px;
+}
+#head{
+	color:	#99CCFF;
+	padding-top: 30px;
+}
+#submit{
+	color:blue;
+}
+#seen{
+ 
+    border:1px solid #FF9966;
+    border-radius: 15px;
+    padding-right: 100px;
+    padding-left: 8px;
+
+}
+#lname{
+ 
+    border:1px solid #FF9966;
+    border-radius: 15px;
+    padding-right: 100px;
+    padding-left: 8px;
+
+}
+#phone{
+ 
+    border:1px solid #FF9966;
+    border-radius: 15px;
+    padding-right: 100px;
+    padding-left: 8px;
+
+}
+#email{
+ 
+    border:1px solid #FF9966;
+    border-radius: 15px;
+    padding-right: 100px;
+    padding-left: 8px;
+
+}
+#button{
+ 
+    border:1px solid #FF9966;
+    border-radius: 15px;
+    padding-bottom:3px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#output{
+	float:right;
+	padding-right: 150px;
+	padding-top:50px;
+}
+
+
+	</style>
+	
+		
+	<div id="main">
+		<div id="rain">
+		<h2 id="head"><u>Registration form</u></h2>
+		<br><br>
+		<form action="" id="form">
+	      <div id="output"></div>
+			<label id="heaf">First name :</label>
+			<br>
+			<input type="text" id="seen" placeholder="Enter your first name"/>
+			<br><br><br>
+			<label id="heaf">Last name :</label>
+			<br>
+			<input type="text" id="lname" placeholder=" Enter your last name" name="">
+			<br><br><br>
+			<label id="heaf">Contact no :</label>
+			<br>
+			<input type="text" id="phone" placeholder="Enter your phone" name="">
+			<br><br><br>
+			<label id="heaf">Email :</label>
+			<br>
+			<input type="email" id="email" placeholder=" Enter your email address" name="">
+			<br><br><br>
+			<button type="button" id="button">button</button>
+			
+			<br><br><br><br><br><br><br><br>
+		</form>
+	</div>
+</div>
+
+
+ <script src="../js/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#button').click(function(){
+					var name=$('#seen').val();
+					var lname=$('#lname').val();
+					var phone=$('#phone').val();
+					var email=$('#email').val();
+					// document.write("<h1>"+name+"<br><br>"+lname +"<br><br>"+phone+"<br><br>" +email +"</h1> ");
+					var output = document.getElementById('output');
+
+					output.innerHTML = "<h1>"+name+"<br><br>"+lname +"<br><br>"+phone+"<br><br>" +email +"</h1> ";
+					
+				});
+			
+			});
+				
+      </script>
+</body>
+
+</html>

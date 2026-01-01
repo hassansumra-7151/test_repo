@@ -1,0 +1,46 @@
+.container{
+	border: solid red 2px;
+}
+#img{
+  border-radius: 50%;
+  margin-left: 20px;
+}
+#float{
+	float: right;
+	padding-right: 80px;
+}
+#dark{
+	color:#74767e;
+
+}
+
+#floatt{
+	float:right;
+	padding-right: 60px;
+	padding-top: 15px;
+}
+#floated{
+	  float:right;
+	padding-right:60px;
+}
+#red{
+	color:#ffbe5b;
+}
+#floatted{
+	  float:right;
+	padding-right:40px;
+}
+#image{
+	size: 1px;
+}
+#pkr{
+	padding-left: 20px;
+	color:#ffbe5b;
+}
+#rs{
+	color:#b5b6ba;
+}
+#margin{
+	float:right;
+	padding-right:10px;
+}
