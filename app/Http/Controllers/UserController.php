@@ -124,6 +124,10 @@ class UserController extends Controller
         $data = register::all();
         return view('display',['getData'=>$data]);
     }
+    public function gate(){
+        $data = register::all();
+        return view('display',['getData'=>$data]);
+    }
 
 
 }
